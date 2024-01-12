@@ -1,0 +1,59 @@
+/* Universal Selector - * {}
+*{
+    background-color: red;
+}
+
+Selection Priority: ID > Class > Element
+# = ID
+. = Class
+
+*/
+/* 
+h1 {
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
+#p1 {
+    color: violet;
+}
+
+.para {
+    background-color: crimson;
+    color: wheat;
+} */
+* {
+    margin: 0;
+}
+
+h1 {
+    background-color: #2a9d8f;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+
+div {
+
+    background-color: #2a9d8f;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    /* border - surrounds the content of the element sit outside the padding */
+    border: 5px solid black;
+    /* margin - dictates the gap between element and surround elements */
+    margin: 50px;
+    /*  padding - dictate the gap between border and content */
+    padding: 25px;
+
+    height: 300px;
+    width: 300px;
+}

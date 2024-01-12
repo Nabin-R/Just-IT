@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Form</title>
+</head>
+
+<body>
+    <form action="./submitrequest.html">
+        <h1>Application Form</h1>
+        <p>Please fill in the required section to complete the form.</p>
+
+        <h3> Personal Information</h3>
+        <p style="color: gray;">Fields with asterisk symbol (*) are required</p>
+        <label for="firstName">First Name:</label>
+        <input id="firstName" type="text" name="#" placeholder="Type your first name" required> *
+        <br>
+        <br>
+        <label for="surName">Surname:</label>
+        <input id="surName" type="text" placeholder="Type your surname" required> *
+        <br>
+        <br>
+        <label for="sex">Sex:</label>
+        <select id="sex" name="gender">
+            <option value="other">Prefer not to say</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+        </select>
+        <br>
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input id="dob" type="date" required> *
+        <br>
+        <br>
+
+        <p>Upload identification (Passport, Birth Certificate or Bank Statement).</p>
+        <input type="file" id="myFile" name="filename" required> *
+        <br>
+        <br>
+
+        <h3> Contact Details</h3>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="YourEmail@Email.Com" required> *
+        <br>
+        <br>
+        <label for="number">Mobile Number:</label>
+        <input id="number" type="tel" placeholder="(+44) 1234-123456" required> *
+        <br>
+        <br>
+        <h4> Preffered form of contact:</h4>
+        <input type="radio" id="sms" name="prefcontact" value="SMS">
+        <label for="sms">SMS</label><br>
+        <input type="radio" id="msm" name="prefcontact" value="MSM">
+        <label for="msm">Email</label><br>
+        <input type="radio" id="both" name="prefcontact" value="BOTH">
+        <label for="both">Both</label>
+        <h3>Declaration & Agreement</h3>
+
+        <input type="checkbox" id="SMS" name="smsbox" value="sms">
+        <label for="SMS"> I want to recieve promotional emails</label><br>
+        <input type="checkbox" id="MSM" name="msmbox" value="msm" required>
+        <label for="MSM"> I agree to the terms and service *</label><br>
+
+        <br>
+
+        <Button type="submit">Submit Application</Button> <br> <br>
+        <input type="reset">
+    </form>
+</body>
+
+</html>

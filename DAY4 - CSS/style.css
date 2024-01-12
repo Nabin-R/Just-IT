@@ -1,0 +1,56 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+nav {
+    background-color: #666699;
+    padding-left: 20px;
+}
+
+.maincontent {
+    background-color: #c8b6ff;
+    padding-bottom: 10px;
+}
+
+#image1 {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+}
+
+#imagetitle {
+    margin-top: 30px;
+    background-color: #b8c0ff;
+}
+
+#imagetitle {
+    text-align: center;
+}
+
+#articleinfo {
+    text-align: center;
+    margin-top: 10px;
+    background-color: #bbd0ff;
+    margin: 30px;
+    border-color: black;
+    border: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: grey;
+    padding-left: 10px;
+}
