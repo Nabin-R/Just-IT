@@ -1,0 +1,40 @@
+#box1 {
+    height: 200px;
+    width: 200px;
+    background-color: dodgerblue;
+    border: 2px solid black;
+}
+
+#box2 {
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    border: 2px solid black;
+}
+
+/* Position Code Below: */
+/* Static - Default value for all elements, standard document flow */
+/* Static positioned elements are not impacted by "top", "bottom", "left" or "right" */
+/* Relative - Allows us to offset the element relative to its starting position */
+/* T,B,L and R - Will offset from the element the specified side the however much you specify */
+/* Absolute
+Allows us to position an element absolutely. */
+/* Absolutely postioned elements search for a NON-Static position parent element
+*/
+/* If a non-static parent cant be found, it will be positioned absolutelty in the viewport (browser page) */
+/* If within a non-static parent element it will be positioned absolutely within it */
+
+/* fixed allows us to fix it in a position on the screen */
+
+#box1 {
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+#box2 {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}

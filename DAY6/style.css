@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: 10px;
+
+
+}
+
+main {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: blueviolet;
+}
+
+#content {
+    background-color: blueviolet;
+    left: auto;
+}
+
+#loreminfo {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border: 2px solid black;
+}
+
+#mainpic {
+
+    display: block;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 100%;
+}
+
+#filler {
+    color: blueviolet;
+}
+
+footer {
+    background-color: grey;
+    padding-top: 10px;
+    padding-left: 5px;
+}

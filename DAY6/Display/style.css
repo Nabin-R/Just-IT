@@ -1,0 +1,17 @@
+div {
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    display: none;
+}
+
+span {
+    background-color: crimson;
+    color: white;
+    width: 250px;
+    display: block;
+}
+
+img {
+    width: 250px;
+}
