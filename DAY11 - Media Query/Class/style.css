@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    background: #353535;
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+}
+
+header {
+    background: #181818;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+header h1 {
+    grid-column: span 6;
+}
+
+header nav {
+    grid-column: 7 / span 6;
+    justify-self: right;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+}
+
+main {
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 1200px;
+}
+
+main img {
+    grid-column: span 6;
+    width: 100%;
+}
+
+main .welcome {
+    grid-column: 8 / span 5;
+    text-align: center;
+}
+
+main h3 {
+    grid-column: span 12;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+main h4 {
+    grid-column: span 12;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+main .card {
+    text-align: center;
+    background: #181818;
+    padding: 10px 20px;
+    grid-column: span 4;
+}
+
+form .card {
+    text-align: center;
+    background: #181818;
+    padding: 10px 20px;
+    grid-column: span 6;
+}
+
+@media (max-width: 1200px) {
+    main img {
+        grid-column: 2 / span 10;
+    }
+
+    main .welcome {
+        grid-column: 2 / span 10;
+    }
+
+    main .card {
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    header h1 {
+        grid-column: span 12;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    header nav {
+        grid-column: span 12;
+        justify-self: center;
+        margin: 10px;
+    }
+
+    main {
+        margin: 20px auto;
+    }
+
+    main img {
+        grid-column: span 12;
+    }
+
+    main .welcome {
+        grid-column: span 12;
+    }
+
+    main .card {
+        grid-column: span 12;
+    }
+}

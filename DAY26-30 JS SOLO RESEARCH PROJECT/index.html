@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>  
+    <link rel="icon" type="image/x-icon"
+    href="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/filter-512.png">
+
+    <title>Genshin Filter Tool</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>Genshin Filter Tool</h1>
+    </header>
+
+    <main class="grid">
+
+        <h3>Character Preview</h3>
+
+        <div class="preview">
+            <div class="previewoutput">
+                <h3 id="previewName">Name:</h3>
+                <h4 id="previewTitle">Title:</h4>
+                <h4 id="previewRarity">Rarity:</h4>
+                <h4 id="previewNation">Nation:</h4>
+                <h4 id="previewSex">Sex:</h4>
+                <h4 id="previewElement">Element:</h4>
+                <h4 id="previewDesc">Description:</h4>
+            </div>
+            <div class = "previewImg">
+                <img id="ImageView"src="https://seeklogo.com/images/G/genshin-japan-logo-7BBE5D9029-seeklogo.com.png" alt="placeholder">
+            </div>
+        </div>
+
+        <h3>Character List</h3>
+
+        <div class="filter">
+            <h3>Filter Options:</h3>
+            <button id="Default" onclick="FilterClick('default')">Default</button>
+            <button id="PyroOnly" onclick="FilterClick('pyro')">Pyro Only</button>
+            <button id="HydroOnly" onclick="FilterClick('hydro')">Hydro Only</button>
+            <button id="CryoOnly" onclick="FilterClick('cryo')">Cryo Only</button>
+            <button id="ElectroOnly" onclick="FilterClick('electro')">Electro Only</button>
+            <button id="GeoOnly" onclick="FilterClick('geo')">Geo Only</button>
+            <button id="DendroOnly" onclick="FilterClick('dendro')">Dendro Only</button>
+            <button id="AnemoOnly" onclick="FilterClick('anemo')">Anemo Only</button>
+            <button id="MaleOnly" onclick="FilterClick('male')">Male Only</button>
+            <button id="FemaleOnly" onclick="FilterClick('female')">Female Only</button>
+        </div>
+
+        <div class="tiles">
+            <div class="list">
+                <p id="removabletext" >Fetching Data ... </p>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>

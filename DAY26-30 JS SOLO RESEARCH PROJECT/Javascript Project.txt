@@ -1,0 +1,17 @@
+Project Criteria:
+- Demonstrate Javascript skills
+- Mainly Javascript based site.
+
+Project:
+API filter
+Search through a tile layout for information.
+Using javascript i am able to filter and select a tile to get information of 
+said character.
+
+Planning:
+- Choose API
+- Create simple Grid layout and organise webpage (i do this first as it helps 
+visualise)
+- Use Javascript to import and list API
+- Use Javascript to be able to filter view - can be simple.
+- Using Javascript display the selected tile and its information.

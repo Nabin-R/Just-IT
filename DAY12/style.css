@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    background-color: black;
+    color: white;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Nav Transition for Hover properties */
+
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+@keyframes cball {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: blue;
+    }
+}
+
+@keyframes textanim {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.colourball {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+
+    animation-name: cball;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.textanimation {
+    animation-name: textanim;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}

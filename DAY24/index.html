@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>JavaScript Events</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="heading">JavaScript Local Storage</h1>
+    </div>
+    <div class="container">
+
+        <form class="addData" class="form" autocomplete="off">
+
+            <!-- Label and Input Field for Key of our data -->
+            <label for="keyInput">Key: </label>
+            <input type="text" id="keyInput">
+            <!-- Label and Input Field for Value of our data -->
+            <label for="valueInput">Value:</label>
+            <input type="text" id="valueInput">
+            <!-- Submit button that will be used to call our Save to LS functionality -->
+            <input type="submit" id="submitBtn" value="Save">
+
+        </form>
+
+        <div class="clearData">
+            <button id="ClearData" height="30px">Clear Data</button>
+        </div>
+
+        <div class="searchData">
+
+            <!-- Label and Input Field for Key of our data -->
+            <p>Search Key:</p>
+            <input id="searchInputData">
+            <!-- Submit button that will be used to call our Save to LS functionality -->
+            <button id="searchButton">Search</button>
+
+        </div>
+
+        <div class="outputData">
+            <p id="outputvalue">Key: ~ Value: ~</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
