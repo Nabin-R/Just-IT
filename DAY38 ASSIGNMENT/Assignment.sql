@@ -154,10 +154,23 @@ from Breakdowns left join Engineers on Breakdowns.EngineerID = Engineers.Enginee
 select concat(MemberFName, ' ', MemberLName) as 'Member', concat(Vehicles.VehicleMake, '-', Vehicles.VehicleModel) as 'Car', BreakdownDate 
 from Breakdowns left join Vehicles on Breakdowns.VehicleReg = Vehicles.VehicleReg left join Members on Vehicles.MemberID = Members.MemberID where Members.MemberID = 123456789;
 
-/*Task 5 
-
+-- ----------------- Task 5 ------------------- --
+/*
 Using W3Schools or any other resource research the following functions – Avg, Max, Min, Sum.  Explain with examples how each one is used.  
+Min is used to find the lowest value.
+Max is used to find the highest value.alter
+Avg is used to find the average value of an expression.
+(N + N + N)/#N(3)
+Sum is used to find the total value of a set amount of value (addition).
 
+*/
+
+select min(MemberID) as 'Min' from Members;
+select max(MemberID) as 'Max' from Members;
+select avg(MemberID) as 'Average'  from Members;
+select sum(MemberID) from Members;
+
+/*
 Task 6 
 
 If a member has more than one vehicle, then display multi-car policy 
@@ -166,5 +179,22 @@ Create a stored procedure which will display number of cars for any member whose
 
 */
 
+DELIMITER $$$
+CREATE PROCEDURE Policy(IN F Varchar(20), IN L Varchar(20) )
+	BEGIN
+		-- Multicar Policy
+		DECLARE MultiPolicy varchar(3);
+		DECLARE Counter Int;
+        
+        set MultiPolicy = 'No';
+        select Counter = sum(Vehicles.MemberID) from Members left join Vehicles on Vehicles.MemberID=Members.MemberID WHERE MemberFName=F AND MemberLName=L ;
+        if Counter >= 2 then set MultiPolicy = 'Yes';
+        end if;
+        
+		-- Find
+		SELECT *, Multipolicy as 'Multi-car Policy Applicable' FROM Members WHERE MemberFName=F AND MemberLName=L;
+    END$$$
+
+call Policy('Joyce','English'); -- First & Last Name
 
 
