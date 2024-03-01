@@ -178,23 +178,20 @@ If a member has more than one vehicle, then display multi-car policy
 Create a stored procedure which will display number of cars for any member whose first name and last name you are passing as argument while calling the stored procedure! 
 
 */
-
+    
 DELIMITER $$$
 CREATE PROCEDURE Policy(IN F Varchar(20), IN L Varchar(20) )
-	BEGIN
-		-- Multicar Policy
-		DECLARE MultiPolicy varchar(3);
-		DECLARE Counter Int;
+		Begin    
+        declare Counter Int; 
+        declare Result varchar(3);
         
-        set MultiPolicy = 'No';
-        select Counter = sum(Vehicles.MemberID) from Members left join Vehicles on Vehicles.MemberID=Members.MemberID WHERE MemberFName=F AND MemberLName=L ;
-        if Counter >= 2 then set MultiPolicy = 'Yes';
-        end if;
-        
-		-- Find
-		SELECT *, Multipolicy as 'Multi-car Policy Applicable' FROM Members WHERE MemberFName=F AND MemberLName=L;
-    END$$$
+		select  concat(Members.MemberFName, ' ', MemberLName) as 'Member', case when count(Members.MemberID) > 1 then "Yes" Else 'No' end as 'Multi-Car Policy applicable?'
+		from Vehicles left join  Members on Vehicles.MemberID=Members.MemberID WHERE Members.MemberFName=F AND Members.MemberLName=L group by Vehicles.MemberID;
+		
+    End
+    $$$
+    
 
-call Policy('Joyce','English'); -- First & Last Name
+call Policy('John','Smith'); -- First & Last Name
 
 
