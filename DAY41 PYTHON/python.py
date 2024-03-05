@@ -211,3 +211,37 @@ print("\nAge is now", AGE)
 
 "Research:" 
 "To DO: Investigate how python use make use of constants to answer if there is any similarity with constant use in JavaScript?"
+
+mySet = [1, 2, 3, 4]
+print('Example: ', mySet[0])
+
+#Modifying
+newSet = mySet[:3], 5, mySet[3:]
+print(newSet) 
+
+mySet2 = {'Apple', 'Banana', "Orange", True, 1, 2}
+print("Example 2: ", mySet2)
+
+
+# List - List are Ordered
+
+my_List = [1, True, 'Hi', [1,2,3]]
+
+# Dictionary
+
+Person = {
+    "Name": "Nabin",
+    "Age": 23,
+    "Gender": "M"
+}
+
+print (Person["Name"])
+
+# Change Value
+Person["Name"] = "Nabin Raj"
+print (Person["Name"])
+
+#Updating Keys/Values
+Person.update({"Name": "Md Nabin Raj"})
+Person.update({"DOB": "11-02-01"}) #Adding new Value
+print(Person)
