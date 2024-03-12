@@ -22,7 +22,7 @@ def db_access():
         # use context manager to access and automatically tear down resource(s)
         # invoke/call the sqlite connect function
         # create db file if it does not exist(use db if exist)
-        with sql.connect("DAY46/devgla9.db") as dbCon:
+        with sql.connect("DAY46-47/devgla9.db") as dbCon:
  
             # create a variable called dbCursor and initialise with cursor() method from the connect function
             dbCursor = dbCon.cursor() # cursor() method is used to cal the execute method
