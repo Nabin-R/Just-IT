@@ -25,7 +25,7 @@ def songs_menu():
     optionsList = ["1","2","3","4","5","6"]
 
     # call/invoke invoke the read_file funcion and assign it to a variable 
-    menu_choices = read_file("PtDBOps2024V2/dbMenu.txt")
+    menu_choices = read_file("Python Project/dbMenu.txt")
 
     # display the contents held in the menu_choices repeatedly 
     while option not in optionsList:

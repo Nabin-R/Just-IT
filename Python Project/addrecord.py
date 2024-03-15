@@ -19,17 +19,20 @@ def insert_record():
         # SongID field is auto increment, no data required
 
         # create variables to store the input for the respective fields
-        song_title = input("Enter song title: ")
-        song_artist = input("Enter song artist: ")
-        song_genre = input("Enter song genre: ")
+        
+        film_title  = input("Enter film title: ")
+        film_release = input("Enter film year release: ")
+        film_rating  = input("Enter film rating: ")
+        film_duration  = input("Enter film duration: ")
+        film_genre  = input("Enter film genre: ")
 
         
         # Create a sql insert statement to inset data from the rspective variables above
-        dbCursor.execute("INSERT INTO songs (Title,Artist,Genre) VALUES(?,?,?)", (song_title, song_artist, song_genre))
+        dbCursor.execute("INSERT INTO tblFilms (Title,YearReleased,Rating,Duration,Genre) VALUES(?,?,?,?,?)", (film_title, film_release, film_rating, film_duration, film_genre ))
         # Call/invoke the commit method to save the changes(record) permanently in the db table
         dbCon.commit()
 
-        print(f"{song_title}  inserted in the songs table")
+        print(f"{film_title}  inserted in the tblFilm table")
     except sql.OperationalError as oe:
         print(f"Failed because {oe}")
 if __name__ == "__main__":
